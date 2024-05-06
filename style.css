@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  --background-color: rgb(30, 30, 35);
+  --section-color : rgba(255, 255, 255, 0.1);
+  --secondary-color : rgb(214, 182, 37);
+  --main-typo : "Permanent Marker", sans-serif;
+  --secondary-typo :"Roboto Condensed", sans-serif;
+  color : white;
+  font-family: var(--secondary-typo);
+}
+
+/*! Commun PC et Mobile*/
+
+main {
+  background-color: var(--background-color);
+  padding : 1.5rem
+}
+h2{
+  color: var(--secondary-color);
+  font-family: var(--main-typo);
+  padding-left: 10%; 
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  cursor: url("/img/Cornes_du-Diable.png"), default;
+}
+
+/** Header Mobile  */
+
+header{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  img{
+    max-width: 60%;
+    max-height: 60%;
+  }
+  nav {
+    margin-right: 1.5rem;
+    text-align: right;
+    li{
+      margin: .5rem 0 .5rem 0;
+      list-style: none;
+      font-size: 1.3rem;
+      a:hover{
+        color : var(--secondary-color);
+      }
+    }
+  }
+}
+
+/*? Header PC */
+
+@media screen and (min-width: 960px){
+  header {
+    flex-direction: column;
+    align-items: center;
+    img{
+      max-width: 80%;
+      max-height: 80%;
+    }
+    ul{
+      width: 75vw;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }  
+}
+
+
+/** Album Mobile */
+
+.album{
+  padding: 10px 10px 5px 10px;
+  background-color: var(--section-color);
+  border-radius: 5px;
+  img{
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+    max-width: 80%;
+  }
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+button {
+  margin : 10px;
+  color: black;
+  font-weight: 1000;
+  background-color: var(--secondary-color);
+  border: none;
+  width: 120px;
+  height: 40px;
+  box-shadow: 10px 10px 36px -5px rgba(0,0,0,0.73);
+  border-radius: 25px;
+}
+button:hover {
+  width: 130px;
+  height: 43px;
+  cursor: url("/img/Cornes_du-Diable.png"), default;
+}
+
+/*? Album PC */  
+
+@media screen and (min-width: 960px) {
+  .album{
+    margin-left: 20%;
+    margin-bottom: 30px;
+    h3 {
+      width : 100%
+    }
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      max-width: 70%
+    }
+    div {
+      flex-direction: column;
+      justify-content: end;
+      text-align: end;
+    }
+  }
+}
+
+/** Concerts Mobile */
+
+article{
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--section-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  img{
+    max-height: 90%;
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*? Concerts PC */
+
+@media screen and (min-width: 960px) {
+  .concerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    h2{
+      width : 100%;
+    }
+  }
+  article{
+    margin-top: 15px;
+    max-width : 25vw;
+    max-height: 30vw;
+    /* flex-direction: row-reverse; */
+    align-items: start;
+    justify-content: space-between;
+    img{
+      max-width: 50%;
+      align-self: end;
+    }
+  }
+}
+
+/** Footer Mobile  */
+
+footer{
+  height: 75px;
+  padding: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color : white;
+  text-align: center;
+  img {
+    max-width: 25%;
+  }
+}
+
+/*? Footer PC  */
+@media screen and (min-width: 960px) {
+  footer {
+    justify-content: space-evenly;
+    img{
+      max-width: 30%;
+    }
+  }
+}
+
+/*! Merch */
+.merch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin: auto;
+    max-height: 60vh;
+  }
+}

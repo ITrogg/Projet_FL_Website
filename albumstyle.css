@@ -1,0 +1,28 @@
+/** Mobile */
+
+article{
+  flex-direction: column;
+  div{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*? PC  */
+
+@media screen and (min-width: 960px) {
+  h2{
+    width: 100%;
+  }
+  section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  article{
+    align-items: center;
+    img {
+      align-self: auto;
+    }
+  }
+}
