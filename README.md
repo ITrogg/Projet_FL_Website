@@ -19,7 +19,7 @@ Le projet FL Band Website a été réalisé en utilisant les technologies suivan
 
 ## Comment exécuter le projet localement
 
-* Clonez ce dépôt : git clone https://github.com/votre-utilisateur/nom-du-depot.git
+* Clonez ce dépôt : git clone https://github.com/ITrogg/Projet_FL_Website.git
 * Ouvrez le fichier index.html dans votre navigateur web
 
 ## Capture d'écran
@@ -31,7 +31,3 @@ Le projet FL Band Website a été réalisé en utilisant les technologies suivan
 ## Auteur
 
 Ce projet a été réalisé par Imanol Deleporte
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
